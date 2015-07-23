@@ -221,3 +221,13 @@ cor(iris[1:4])
 ## Petal.Length    0.8717538  -0.4284401    1.0000000   0.9628654
 ## Petal.Width     0.8179411  -0.3661259    0.9628654   1.0000000
 corrgram(iris)
+
+
+data(iris)
+par(mfrow=c(2,2))
+boxplot(iris$Sepal.Length,col="green")
+boxplot(iris$Sepal.Length~iris$Species,col="yellow")
+boxplot(iris$Sepal.Length~iris$Species,col=heat.colors(5))
+boxplot(iris$Sepal.Length~iris$Species,col=topo.colors(7))
+
+
